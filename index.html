@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Electronic Voting Machine</title>
+</head>
+<body>
+    <h1>Welcome to the Electronic Voting Machine</h1>
+    <form action="/vote" method="post">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="position">Select Position:</label>
+        <select id="position" name="position">
+            <option value="president">President</option>
+            <option value="vice_president">Vice President</option>
+            <!-- Add other positions here -->
+        </select>
+        <br>
+        <label for="candidate">Select Candidate:</label>
+        <select id="candidate" name="candidate">
+            <!-- Populate candidates for selected position using JavaScript based on the selected position -->
+        </select>
+        <br>
+        <input type="submit" value="Vote">
+    </form>
+</body>
+</html>
